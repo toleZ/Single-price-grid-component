@@ -1,0 +1,112 @@
+$font: 'Karla', sans-serif
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: $font
+
+body
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: hsl(204, 43%, 93%)
+
+.container
+    width: 80%
+    margin: 5vh auto
+    box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.2)
+    border-radius: 5px
+    overflow: hidden
+    display: flex
+    flex-direction: column
+
+.section
+    padding: 18px
+    &--1
+        background-color: white
+        h2
+            font-size: 20px
+            font-weight: 700
+            color: #4ABEBD
+            padding-top:  1rem
+        h3
+            font-size: 16px
+            font-weight: 700
+            color: hsl(71, 73%, 54%)
+            padding: 1rem 0
+            max-width: 280px
+        p
+            font-size: 14px
+            font-weight: 400
+            color: hsl(218, 22%, 67%)
+            line-height: 28px
+            padding-bottom: 1rem
+    &--2
+        background-color: hsl(179, 62%, 43%)
+        h2
+            font-size: 20px
+            font-weight: 700
+            color: white
+            padding-top: 1rem
+        h3
+            font-size: 16px
+            font-weight: 400
+            color: hsl(204, 43%, 93%)
+        button
+            font-size: 16px
+            color: white
+            background-color: hsl(71, 73%, 54%)
+            padding: .8rem
+            border: none
+            border-radius: 5px
+            box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.2)
+            width: 100%
+            margin-top: 30px
+            transition: transform .05s
+            &:active
+                transform: translateY(2px)
+    &__price
+        display: flex
+        flex-direction: row
+        align-items: center
+        &--value
+            font-size: 34px
+            font-weight: 700
+            color: white
+            padding: 1rem
+            padding-left: 0
+        &--info
+            font-size: 16px
+            font-weight: 400
+            color: hsl(204, 43%, 93%)
+    &--3
+        background-color: #4ABEBD
+        h2
+            font-size: 20px
+            font-weight: 700
+            color: white
+            padding: 1rem 0
+        li
+            padding: 1.2px 0
+            list-style: none
+            font-size: 14px
+            font-weight: 400
+            color: hsl(204, 43%, 93%)
+
+@media screen and (min-width: 1440px)
+    .container
+        width: 40%
+        flex-direction: row
+        flex-wrap: wrap
+
+    .section
+        padding: 2rem
+        &--1
+            width: 100%
+        &--2
+            width: 50%
+        &--3
+            width: 50%
+    
